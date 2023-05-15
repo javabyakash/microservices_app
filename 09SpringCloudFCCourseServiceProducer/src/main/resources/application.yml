@@ -1,0 +1,15 @@
+#Server Info
+server:  port: 9904
+  
+#SID
+spring:  application:    name: COURSE-SERVICE
+
+#Service Instance
+eureka:  instance:    instance-id: ${spring.application.name}:${random.value}
+    
+#Publish MS with Eureka  client:    service-url:
+       defalutZone: http://localhost:8761/eureka
+       
+#Eureka props    register-with-eureka: true
+    fetch-registry: true
+      

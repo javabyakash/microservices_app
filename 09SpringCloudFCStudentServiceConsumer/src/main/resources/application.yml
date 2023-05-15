@@ -1,0 +1,11 @@
+#Server Info
+server:  port: 9090
+  
+#SID
+spring:  application:    name: STUDENT-SERVICE
+    
+#Publish MS in Eureka register
+eureka:  client:    service-url:      defaultZone: http://localhost:8761/eureka
+      
+#Eureka Props Config    register-with-eureka: true
+    fetch-registry: true
